@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles.css'
 import resume from '../documents/Resume.pdf'
+import presentation from '../documents/BERT Presentation_ 2023 SRNT.pdf'
 
 const App = () => {
   return (
@@ -11,11 +12,16 @@ const App = () => {
 		<div>
       	<h1 className="text-3xl font-bold tracking-tight text-slate-200 sm:text-5xl">Ben Pretzer</h1>
       	<h2 className='text-xl font-medium tracking-tight text-slate-200 mt-3 sm:text-lg'> Software Engineer </h2>
-     	 <p className="mt-4 max-w-xs leading-normal">
-      	I am a recent Electrical and Computer Engineering graduate that is focused on building modern and accessible software solutions.
+     	 <p className="mt-4 max-w-sm leading-normal text-sm">
+      	I am a recent graduate from the University of Texas in Austin with an Electrical and Computer Engineering degree
+		following the Software Development track, focused on building modern and accessible software solutions.
       </p>
 	  	</div>
-      <ul className='ml-1 mt-8 mb-2 flex items-center'>
+		<div>
+		<p className="ml-1 mt-2 mb-4 max-w-xs leading-normal text-sm">
+      	This website was custom built using React and Tailwind CSS. Links to my social media and resume can be found below.
+      </p>
+      <ul className='ml-1 mt-2 mb-2 flex items-center'>
 			{/* LinkedIn */ }
         <li className='mr-10 text-xs'>
           <a className='block hover:text-slate-200' href="https://linkedin.com/in/ben-pretzer" target='_blank' rel="noreferrer">
@@ -155,36 +161,85 @@ const App = () => {
 		<rect x="160" y="360" width="136" height="16"/>
 	</g>
 </g>
-</svg>
-</a>
+			</svg>
+		</a>
       	</li>
       </ul>
+	</div>
       </header>
 	  <main className='pt-24 lg:w-1/2 lg:py-20'>
-		<section className='mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24'>
-			<div className='sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-5 md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0'>
-				<h2 className='text-sm font-bold uppercase tracking-widest text-slate-300 lg:sr-only'> About me </h2>
-			</div>
-			
+		<section className='mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24'>			
 			<div>
 			<h2 className='text-sm font-bold uppercase tracking-widest text-slate-300'> About me </h2>
-				<p className='mt-4'> In 2018, when I applied to the University of Texas at Austin, I knew I wanted to pick a major that 
+				<p className='mt-4'> In 2018, I applied to the University of Texas at Austin, knowing I wanted to pick a major that 
 					would allow me to work on and with interesting technologies. So, with no prior coding experience, 
-					I applied for the Electrical Engineering major. Little did I know when I got accepted into the program
-					the breadth and functionality of Software Engineering, and my passion for using technology to 
-					deliver innovative solutions to people.
+					I applied for the Electrical Engineering program. Upon acceptance into the program, I fell in love with
+					the breadth and functionality of Software Engineering, and discovered my passion for using technology to 
+					deliver innovative solutions to challenging problems.
 				</p>
 				<p className='mt-2'>
-					Since that first semester, I have had the pleasure of working on and developing some neat projects, 
-					both academically and professionally. Most recently, I worked with a research team from Yale
-					and under a Professor from the Moody School of Journalism and Media on a federally funded research
-					grant studying the use of e-cigarettes on social media, and most notably TikTok. 
+					Since that first semester, I have had the opportunity to work on projects that required me to develop different skills,
+					use new technologies and learn many coding languages, from C / C++ to Python. 
+					Most recently, I worked with a research team from Yale's School of Medicine and a Professor from the UT Moody School of 
+					Journalism and Media on a federally funded research grant studying the use of e-cigarettes on social media, 
+					and most notably TikTok. 
 				</p>
 				<p className='mt-2'>
-					I have also found a deep passion in the financial markets over the past years, 
-					and graduated with a Business Minor. Please do not hesitate to reach out and connect!
+					Apart from Software Engineering, I have a deep interest in the financial markets
+					and graduated with a Business Minor from the McCombs School of Business. 
+				</p>
+				<p className='mt-2'>
+					I am currently looking for an opportunity to further my skills, solve interesting problems and 
+					make an impact in a company. I look forward to hearing from you soon!
 				</p>
 			</div>
+		</section>
+
+		<section className='mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24'>
+			<h2 className='text-sm font-bold uppercase tracking-widest text-slate-300 mb-8'> Projects </h2>
+				<div>
+					<ul>
+						<li className='mb-12'>
+							<div className='relative group grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4
+											lg:hover:!opacity-100 lg:group-hover/list:opacity-50'>
+								<div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-amber-800/100">
+									<div className='z-10 sm:order-2 sm:col-span-6'>
+										<h3>
+											<a className='inline-flex items-baseline font-medium leading-tight text-slate-300 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base' href={presentation} target='_blank'>
+												BERTopic Study Results
+											</a>
+										</h3>
+										<p className='mt-2 text-sm leading-normal'> View the results of the BERTopic analysis, where machine learning was used to identify common themes of e-cigarette 
+																					related content on TikTok. This presentation was presented at SRNT (Society for Research on Nicotine and Tobacco) 2023 in San Antonio, Texas. 
+										</p>
+										<ul className='mt-2 flex flex-wrap'>
+											<li className='mr-1.5 mt-2'>
+												<div className='flex items-center rounded-full bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '>
+													React
+												</div>
+											</li>
+											<li className='mr-1.5 mt-2'>
+												<div className='flex items-center rounded-full bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '>
+													BERTopic
+												</div>
+											</li>
+											<li className='mr-1.5 mt-2'>
+												<div className='flex items-center rounded-full bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '>
+													Python
+												</div>
+											</li>
+											<li className='mr-1.5 mt-2'>
+												<div className='flex items-center rounded-full bg-teal-400/20 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '>
+													Data analysis
+												</div>
+											</li>
+										</ul>				
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
 		</section>
 	  </main>
       </div>
