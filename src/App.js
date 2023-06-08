@@ -2,6 +2,8 @@ import React from 'react';
 import '../styles.css'
 import resume from '../documents/Resume.pdf'
 import presentation from '../documents/BERT Presentation_ 2023 SRNT.pdf'
+import yale from '../documents/yale.png'
+import yale2 from '../documents/yale_50.png'
 
 const App = () => {
   return (
@@ -180,7 +182,7 @@ const App = () => {
 				<p className='mt-2'>
 					Since that first semester, I have had the opportunity to work on projects that required me to develop different skills,
 					use new technologies and learn many coding languages, from C / C++ to Python. 
-					Most recently, I worked with a research team from Yale's School of Medicine and a Professor from the UT Moody School of 
+					Most recently, I worked with a research team from Yale's School of Medicine and a Professor from the UT School of 
 					Journalism and Media on a federally funded research grant studying the use of e-cigarettes on social media, 
 					and most notably TikTok. 
 				</p>
@@ -196,13 +198,13 @@ const App = () => {
 		</section>
 
 		<section className='mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24'>
-			<h2 className='text-sm font-bold uppercase tracking-widest text-slate-300 mb-8'> Projects </h2>
-				<div>
+			<div>
+				<h2 className='text-sm font-bold uppercase tracking-widest text-slate-300 mb-8'> Projects </h2>
 					<ul>
 						<li className='mb-12'>
-							<div className='relative group grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4
-											lg:hover:!opacity-100 lg:group-hover/list:opacity-50'>
-								<div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-amber-800/100">
+							<div class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+								<div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-amber-800/100 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+									</div>
 									<div className='z-10 sm:order-2 sm:col-span-6'>
 										<h3>
 											<a className='inline-flex items-baseline font-medium leading-tight text-slate-300 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base' href={presentation} target='_blank'>
@@ -235,7 +237,6 @@ const App = () => {
 											</li>
 										</ul>				
 									</div>
-								</div>
 							</div>
 						</li>
 					</ul>

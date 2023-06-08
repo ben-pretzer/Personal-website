@@ -26,7 +26,7 @@ module.exports = {
         use: ['style-loader', 'css-loader', 'postcss-loader'], 
       },
       {
-        test: /\.pdf$/,
+        test: /\.(pdf|png)$/,
         use: {
           loader: 'file-loader',
           options: {
