@@ -7,8 +7,8 @@ import yale2 from '../documents/yale_50.png'
 
 const App = () => {
   return (
-    <body className='bg-amber-700 leading-relaxed text-slate-300'>
-    <div className="mx-auto max-w-screen-xl px-6 py-12 font-poppins md:px-12 md:py-20 lg:px-24 lg:py-0 sm:w-screen">
+    <body className='bg-amber-700 leading-relaxed text-slate-300 sm:h-full'>
+    <div className="mx-auto max-w-screen-xl px-6 py-12 font-poppins md:px-12 md:py-20 lg:px-24 lg:py-0">
       <div className='lg:flex lg:justify-between lg:gap-4'>
       <header className='lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-20'>
 		<div>
