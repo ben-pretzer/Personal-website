@@ -4,9 +4,11 @@ import resume from '../documents/Resume.pdf'
 import presentation from '../documents/BERT Presentation_ 2023 SRNT.pdf'
 import yale from '../documents/yale.png'
 import yale2 from '../documents/yale_50.png'
+import { Analytics } from '@vercel/analytics/react';
 
 const App = () => {
   return (
+	<>
     <body className='bg-amber-700 leading-relaxed text-slate-300'>
     <div className="mx-auto max-w-screen-xl px-6 py-12 font-poppins md:px-12 md:py-20 lg:px-24 lg:py-0">
       <div className='lg:flex lg:justify-between lg:gap-4'>
@@ -244,10 +246,10 @@ const App = () => {
 		</section>
 	  </main>
       </div>
-	
-
       </div>
     </body>
+	<Analytics/>
+	</>
   );
 };
 
