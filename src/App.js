@@ -1,4 +1,5 @@
 import React from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import '../styles.css'
 import resume from '../documents/Resume.pdf'
 import presentation from '../documents/BERT Presentation_ 2023 SRNT.pdf'
@@ -247,6 +248,7 @@ const App = () => {
       </div>
       </div>
     </body>
+	<Analytics/>
 	</>
   );
 };
