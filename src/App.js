@@ -4,7 +4,6 @@ import resume from '../documents/Resume.pdf'
 import presentation from '../documents/BERT Presentation_ 2023 SRNT.pdf'
 import yale from '../documents/yale.png'
 import yale2 from '../documents/yale_50.png'
-import { Analytics } from '@vercel/analytics/react';
 
 const App = () => {
   return (
@@ -248,7 +247,6 @@ const App = () => {
       </div>
       </div>
     </body>
-	<Analytics/>
 	</>
   );
 };
